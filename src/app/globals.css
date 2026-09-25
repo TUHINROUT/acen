@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0a0a0c;
+  --bg-alt: #131316;
+  --card: #18181c;
+  --line: #2a2a2f;
+  --accent: #ff3366;
+  --accent-dim: #ff336633;
+  --text: #f5f5f7;
+  --muted: #9a9aa4;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-alt: var(--bg-alt);
+  --color-card: var(--card);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --font-display: "Segoe UI", "Helvetica Neue", Arial, ui-sans-serif, sans-serif;
+  --font-body: "Segoe UI", "Helvetica Neue", Arial, ui-sans-serif, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.section-divider {
+  width: 1px;
+  height: 48px;
+  background: var(--line);
+  margin: 0 auto;
+}
+
+::selection {
+  background: var(--accent);
+  color: white;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
