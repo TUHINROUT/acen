@@ -102,6 +102,15 @@ export const caseSteps = [
   ["The Outcome", "What changed after implementation?"],
 ];
 
+export type Testimonial = {
+  id: string;
+  quote: string;
+  name: string;
+  company: string;
+};
+
+export const testimonials: Testimonial[] = [];
+
 export const evolution = [
   ["2017", "Digital Marketing", "Started with SEO & SMO, helping businesses improve their visibility and reach online."],
   ["2019", "Web & Digital Experiences", "Expanded into Website Design & Development to create complete digital solutions for businesses."],
